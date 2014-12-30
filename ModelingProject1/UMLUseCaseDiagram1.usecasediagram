@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1fd11a62-14e6-4f41-a6f1-423a2501c529" name="UMLUseCaseDiagram1" linkedPackageId="9554ff86-2912-44e9-905a-2c93d7e2220c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="86abd851-b94c-4c88-a37d-5f46cfdf4d57">
+      <profileInstance Id="6f838c74-cf8c-4377-946c-4d72690273d9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bec7a9e5-5a98-49bd-b87c-aa355a2961f4">
+      <profileInstance Id="63dfb927-643d-4df6-bdd1-0f873a69b731" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ec8aad5d-80de-4a7a-a702-68df3f2b6f35" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3cf8ec7c-c304-43cf-805c-b4f2f9a55aff" />
+        <targetEnds>
+          <association Id="6f89ff35-95e5-450f-a08e-489d2bc4314e" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="00a9ae12-0efd-487e-8fb7-11235b10c5a9" LastKnownName="View Wind Speed" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3dc56a7d-15b1-453e-9cd3-0d5b8463cd7f" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2e31ae6b-a48e-4a4d-9be8-49fd5550d8aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9201786-45e2-44db-b2b9-095fdf94f5f4" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3ef47e9-031d-4a82-bce9-a46f37348fa6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6c849e47-079b-41d6-91fd-59e4aa523eac" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00a9ae12-0efd-487e-8fb7-11235b10c5a9" name="View Wind Speed" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="085615f6-8dd8-4e41-8db9-e3491f86d982" />
+        <subjects>
+          <subsystemMoniker Id="2fa53f77-45cf-42a2-8832-7161b37bb7e9" LastKnownName="WindPlot" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="2fa53f77-45cf-42a2-8832-7161b37bb7e9" name="WindPlot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="50fc0f7f-54f1-4907-9cbd-aa0b2080f4b8" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="9554ff86-2912-44e9-905a-2c93d7e2220c" name="ModelingProject1">
+    <elementDefinition Id="73a3fd5c-bf71-45a6-88b7-a73da00aecad" />
+  </package>
+</useCaseModelRoot>

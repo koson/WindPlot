@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="596f7317-4f15-4cfa-83a7-6d7109fed049" name="UMLUseCaseDiagram1" linkedPackageId="23407d3e-85f6-4986-a8dc-129fd9a2e9d1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="cfadbc52-955e-4b14-bd4e-90fa3442575c" name="user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="914254ea-7f71-4426-8828-559e75d529a9" />
+        <targetEnds>
+          <association Id="51c85847-6cc3-4ff6-bd12-44533757b37f" isDerived="false" sourceEndRoleName="user" targetEndRoleName="View Station Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6a74147b-7ff0-467e-ae37-86c76064c703" LastKnownName="View Station Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37d56cf4-d19c-480e-bd30-80fe7076b14e" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4f88ce2f-b815-40f8-adb7-101f817e9e96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fa055b1-a24f-4812-920d-b99c4ef691a2" name="View Station Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9be10e48-a676-46cf-b4de-4a6ed88c4f91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7160bbda-7648-4e83-9931-a82f80335ee5" />
+          </association>
+          <association Id="fc5f09ad-665b-4686-bf4e-f22d90e55f49" isDerived="false" sourceEndRoleName="user" targetEndRoleName="View Series of Data" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="af222a43-15e6-4799-95d8-57a7b92e9157" LastKnownName="View Series of Data" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3762746f-9abe-423b-9b88-8755f349e4bc" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="653b926a-8102-45c7-840f-198b23eda167" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40f72d25-dc9d-435a-ac71-0066d6f90bcd" name="View Series of Data" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5dc0cff-8883-4d60-a04b-a89aa57d5515" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39f6c099-1992-49f7-9dee-62c2f7cd58b5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6a74147b-7ff0-467e-ae37-86c76064c703" name="View Station Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2361dd3-c73b-4339-8bce-89cb5c02f475" />
+        <subjects>
+          <subsystemMoniker Id="4eecf222-b7c0-4739-8038-c028ee49f846" LastKnownName="Windplot " />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="4eecf222-b7c0-4739-8038-c028ee49f846" name="Windplot " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca37b69d-e0e5-4fd4-81a5-aaab2dc23be8" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="af222a43-15e6-4799-95d8-57a7b92e9157" name="View Series of Data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3981fec8-c94d-42f4-8a5e-412b06a389a2" />
+        <additions>
+          <include Id="4602ed29-4883-4d6a-91c6-6641a30889b1">
+            <useCaseMoniker Id="14704eae-b31f-43da-a20f-a24cb2d9bb18" LastKnownName="Vew point of Data" />
+            <elementDefinition Id="3ea78687-c063-43eb-84dc-404ea771346c" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="4eecf222-b7c0-4739-8038-c028ee49f846" LastKnownName="Windplot " />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="14704eae-b31f-43da-a20f-a24cb2d9bb18" name="Vew point of Data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34a9b040-94e5-4cdd-9c42-234588a7da3f" />
+        <subjects>
+          <subsystemMoniker Id="4eecf222-b7c0-4739-8038-c028ee49f846" LastKnownName="Windplot " />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="23407d3e-85f6-4986-a8dc-129fd9a2e9d1" name="ModelingProject2">
+    <elementDefinition Id="c9fc343f-b131-4ee5-9a64-3a1f2f459dc7" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f01c0489-edd5-447d-8225-7d3957cf5a39">
+        <profileInstance Id="03fb767e-e72c-4d15-bab4-7595ee7dba13" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="642521f6-dda6-4284-8a0f-e8b31ac3136b">
+        <profileInstance Id="52594441-d3d4-45a6-8319-09a0d7451e64" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

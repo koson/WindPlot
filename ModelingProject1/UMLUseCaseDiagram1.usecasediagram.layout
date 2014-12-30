@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="1fd11a62-14e6-4f41-a6f1-423a2501c529" />
+  <nestedChildShapes>
+    <actorShape Id="bd06a8c2-3894-4c0c-9ba5-6ba24fe12244" absoluteBounds="2.375, 1.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="ec8aad5d-80de-4a7a-a702-68df3f2b6f35" LastKnownName="Customer" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="b2782527-aebe-482b-81f9-d3809ccf1eca" absoluteBounds="3.375, 0.875, 2, 2" customColor="White">
+      <subsystemMoniker Id="2fa53f77-45cf-42a2-8832-7161b37bb7e9" LastKnownName="WindPlot" />
+      <nestedChildShapes>
+        <useCaseShape Id="0c41660e-795b-46d6-beb3-0d5e3392761c" absoluteBounds="4, 1.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="00a9ae12-0efd-487e-8fb7-11235b10c5a9" LastKnownName="View Wind Speed" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 1.51666666666667); (4.00438604965868 : 1.59195906997725)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6f89ff35-95e5-450f-a08e-489d2bc4314e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="bd06a8c2-3894-4c0c-9ba5-6ba24fe12244" />
+        <useCaseShapeMoniker Id="0c41660e-795b-46d6-beb3-0d5e3392761c" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
