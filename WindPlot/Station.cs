@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindPlot
 {
-    public class Station
+    public class Station  
     {
         private DateTime _datetime;
         private string _name;
@@ -62,6 +62,7 @@ namespace WindPlot
         public void Report()
         {
             Console.WriteLine("ID : " + id);
+            
             Console.WriteLine("Name : " + name);
             stationDetails.Report();
             stationData.ForEach(report);
@@ -71,9 +72,12 @@ namespace WindPlot
         {
             s.Report();
         }
-        //public void ReportData()
-        //{
-        //    stationData.Report();
-        //}
+
+        public void updateForm(Form1 f)
+        {
+            f.updateID(_id.ToString());
+            f.updateStationName(_name.ToString());
+        }
+
     }
 }

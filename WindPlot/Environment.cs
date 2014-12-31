@@ -52,5 +52,11 @@ namespace WindPlot
             Console.WriteLine("Environment Humidity : " +  Humidity);
 
         }
+
+        internal void updateForm(Form1 form1)
+        {
+            form1.updateTemperature(Temperature.ToString());
+            form1.updateHumidity(Humidity.ToString());
+        }
     }
 }

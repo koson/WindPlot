@@ -53,5 +53,11 @@ namespace WindPlot
             Console.WriteLine("GPS Longitude : " + Longitude);
             Console.WriteLine("GPS Altitude : " + Altitude);
         }
+
+        internal void updateForm(Form1 form1)
+        {
+            form1.updateLatitude(Latitude.ToString());
+            form1.updateLongitude(Longitude.ToString());
+        }
     }
 }

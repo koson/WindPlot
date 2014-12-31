@@ -53,5 +53,13 @@ namespace WindPlot
             Console.WriteLine("Wind Direction : " +  direction);
             Console.WriteLine("Wind DateTime : " +  datetime.ToString());
         }
+
+        internal void updateForm(Form1 form1)
+        {
+            form1.updateWindSpeed(speed.ToString());
+            form1.updateWindDirection(direction.ToString());
+            form1.updateWindDateTime(datetime.ToString());
+            
+        }
     }
 }
